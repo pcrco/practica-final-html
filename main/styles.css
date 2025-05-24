@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #333;
+    color: #ffff;
+    padding-top: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222; /* color de fondo (mirar luego en el body si pongo imagen de fondo */
+    z-index: 1000;
+    padding: 1rem;
+}  
+
+.navbar .nav-list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2em;
+}
+  
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+  /* cambia cuando estás en una página que ya has visto */
+.navbar .nav-link:visited {
+    color: lightskyblue;
+}
+  
+  /* se cambia de color cuando pasas el mouse */
+.navbar .nav-link:hover {
+    text-decoration: underline;
+    color:lightgreen;
+}
+
+#index-main-content {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+    text-align: left;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.index-titles {
+    text-align: center;
+}
+
+.index-img {
+    display: block;
+    margin: 2rem auto;  /* deberia funcionar */
+    max-width: 650px;
+    max-height: 325px;
+    border-radius: 10px;
+}
+
+.main-footer {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    padding: 1em 0;
+}
+
+.card {
+    background-color: rgb(128, 128, 128);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1em;
+    text-align: center;
+    margin: 1em;
+
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px; /* gap entre las cards */
+}
+
+.card-title {
+    font-size: 10mm;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-family: sans-serif;
+}
+
+.card-text {
+    color: #ffffff;
+    font-size: 0.95em;
+    text-align: justify;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-gatos {
+    background-color: rgb(128, 128, 128);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1em;
+    text-align: center;
+    max-width: 600px;
+    margin: 1em auto;
+  }
+  
+  .card-gatos summary {
+    cursor: pointer;
+    list-style: none; /* quita el triángulo */
+  }
+  
+  .carousel {
+    width: 600px;       /* Ancho de la galeria */
+    height: 400px;      /* Alto */
+    overflow: hidden;   /* Oculta el overflow */
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  
+  .gallery {
+    display: flex;           /* flex */
+    width: calc(600px * 5);
+    position: relative;
+    left: 0;
+    animation: gallery 25s infinite;
+  }
+  
+  .gallery img {
+    width: 600px;
+    height: 400px;
+    max-height: 400px;
+    max-height: 600px;
+    object-fit: cover;
+    flex-shrink: 0; 
+  }
+  
+  /* la animacion */
+  @keyframes gallery {
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -600px; }
+    45% { left: -600px; }
+    50% { left: -1200px; }
+    70% { left: -1200px; }
+    75% { left: -1800px; }
+    95% { left: -1800px; }
+    100% { left: -2400px; }
+  }
+  
+  @-webkit-keyframes gallery {
+    0% { left: 0; }
+    20% { left: 0; }
+    25% { left: -600px; }
+    45% { left: -600px; }
+    50% { left: -1200px; }
+    70% { left: -1200px; }
+    75% { left: -1800px; }
+    95% { left: -1800px; }
+    100% { left: -2400px; }
+  }  
+
+.main-footer {
+    color:#222;
+}
+
