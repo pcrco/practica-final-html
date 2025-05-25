@@ -30,4 +30,4 @@ Este es el resultado final de mi página.
 
 ![gatos](/images/gatos.jpg)
 
-![otros](/images/otros.jpg)
+![otros](/images/otros.png)
